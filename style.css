@@ -150,3 +150,35 @@ section.Hero {
     display: block; /*inline -> block*/
     margin-top: 2rem;
 }
+/*------------------------------------------------------------------------------------------------*/
+.Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Skills h1{
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 1rem;
+}
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.skill-item img{
+    width: 4rem;
+    height: 4rem;
+}
+.skill-item span{
+    margin-top: 1rem;
+}
