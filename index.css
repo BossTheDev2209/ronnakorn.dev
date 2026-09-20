@@ -32,8 +32,8 @@
 :root {
     --color-bg: #ffffff;
     --color-text: #222222;
-    --color-muted: #555555;
-    --color-accent: #f27830;
+    --color-muted: #454545;
+    --color-accent: #ff7626;
 }
 /*<html></html> variables defined here are available everywhere.*/
 
@@ -59,7 +59,7 @@ nav{
     gap: 2rem;
     padding: 1rem 2rem; /*top-btm, left-right*/
 }
-nav a[href="#hero"]{
+nav a[href="/index.html"]{
     font-weight: bold;
 }
 nav a{
@@ -68,14 +68,18 @@ nav a{
     padding: 0 1rem;
 }
 /*------------------------------------------------------------------------------------------------*/
-section{
-    min-height: 100vh;
-}
+
 section.Hero {
-    min-height: auto;
-    padding: 10rem 2rem;
+    padding: 5rem 4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.HeroContainer{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 5rem;
 }
@@ -84,34 +88,15 @@ section.Hero {
 }
 .HeroText h1{
     color: var(--color-text);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .HeroText p{
     color: var(--color-muted);
     font-size: 1.2rem;
     line-height: 1.6;
 }
-/*------------------------------------------------------------------------------------------------*/
-.About{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    padding: 2rem 2rem;
-    min-height: 25vh;
-}
-.About h2{
-    font-size: large;
-    color: var(--color-text);
-}
-.About p{
-    color: var(--color-muted);
-    line-height: 1.6;
-}
-
 /*------------------------------------------------------------------------------------------------*/
 .Projects{
     display: flex;
@@ -120,14 +105,28 @@ section.Hero {
     justify-content: center; /*main axis*/
     padding: 4rem 2rem;
 }
+.ProjectsContainer{
+    flex-direction: column;
+    justify-items: center;
+    gap: 5rem;
+}
+.ProjectsHeader{
+    display: flex;
+    flex-direction: row;
+}
 .Projects h2{
     font-size: 2rem;
     color: var(--color-text);
     margin-bottom: 2rem;
 }
+.Projects a{
+    font-size: 1.2rem;
+    text-decoration: dotted;
+    color: var(--color-text);
+}
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
 .project-card{
@@ -151,34 +150,3 @@ section.Hero {
     margin-top: 2rem;
 }
 /*------------------------------------------------------------------------------------------------*/
-.Skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.Skills h1{
-    color: var(--color-text);
-    margin-bottom: 2rem;
-}
-.skills-grid{
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    gap: 1rem;
-}
-.skill-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-bg);
-    padding: 1rem;
-    border-radius: 1rem;
-}
-.skill-item img{
-    width: 4rem;
-    height: 4rem;
-}
-.skill-item span{
-    margin-top: 1rem;
-}
