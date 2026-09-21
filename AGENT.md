@@ -6,7 +6,7 @@ This file provides guidance to AI agents working with code in this repository.
 
 A static personal developer website for Ronnakorn Khansamrong (BossTheDev2209).
 
-The site is intentionally compact, minimal, personal, and technically oriented. It is inspired by the information architecture and personal-site feeling of Jason Cameron's website, but must remain distinctly Ronnakorn's own identity and design.
+The site is intentionally compact, minimal, personal, and technically oriented. It is   pired by the information architecture and personal-site feeling of Jason Cameron's website, but must remain distinctly Ronnakorn's own identity and design.
 
 The site is currently built with plain HTML and CSS:
 
@@ -26,6 +26,9 @@ start index.html
 
 # Or serve locally
 python -m http.server
+
+# Or use Vscode extension
+live server
 ```
 
 Serving locally is preferred when checking font/image behavior.
