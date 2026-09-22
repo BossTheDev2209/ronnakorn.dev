@@ -34,6 +34,7 @@
     --color-text: #222222;
     --color-muted: #454545;
     --color-accent: #FF5E00;
+    --color-accent-muted: #BE4600;
 }
 /*<html></html> variables defined here are available everywhere.*/
 
@@ -49,8 +50,13 @@ html {
 body{
     font-family: "LINE Seed Sans TH", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #fffdf7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 nav{
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -67,10 +73,15 @@ nav a{
     color: var(--color-text);
     padding: 0 1rem;
 }
+svg{
+    vertical-align:middle;
+    margin-right: 15px;
+}
+
 /*------------------------------------------------------------------------------------------------*/
 
 section.Hero {
-    padding: 5rem 4rem;
+    padding: 5rem 0rem 0rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,8 +110,10 @@ section.Hero {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
 /*------------------------------------------------------------------------------------------------*/
 .Icons{
+    margin-top: 3.5rem;
     width: 100%;
     max-width: 867px;
     display: flex;
@@ -108,35 +121,36 @@ section.Hero {
     align-items: center;
     gap: 5rem;
 }
+.Icons a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+.Icons #more{
+    color: var(--color-accent-muted);
+}
 .icon{
     display: flex;
     justify-items: flex-start;
     gap: 2rem;
 }
-.icon a{
-    color: var(--color-muted);
-}
 /*------------------------------------------------------------------------------------------------*/
 .Projects{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; /*main axis*/
-    padding: 4rem 2rem;
-}
-.ProjectsContainer{
-    flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     gap: 5rem;
+    margin-top: 15rem;
+    max-height: 600px;
+    width: 900px;
 }
 .ProjectsHeader{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .Projects h2{
     font-size: 2rem;
     color: var(--color-text);
-    margin-bottom: 2rem;
 }
 .Projects a{
     font-size: 1.2rem;
@@ -156,7 +170,7 @@ section.Hero {
 }
 .project-card img{
     width: 100%; /*fill card width*/
-    border: 0.5rem;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
     aspect-ratio: 16/9;
     object-fit: cover;
