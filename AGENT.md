@@ -350,3 +350,10 @@ This project is also a frontend learning environment. Apply the teaching princip
 - Do not restart explanations from fundamentals already established in the project unless the learner asks.
 - At the start of a new session, read the project instructions and relevant current files before asking the learner to repeat context.
 - Keep the immediate next implementation step explicit so the session can resume without a long recap.
+
+### Repository reading workflow
+- The current project structure is a small multi-page static site centered on `index.html`, `projects.html`, `about.html`, their page-specific CSS files, local assets, `HANDOFF.md`, and project instructions. Verify the actual repository before assuming a file exists or is authoritative.
+- When reviewing the repository, first check `git status`, `git log -2 --oneline`, and `git diff HEAD~1 HEAD -- .` so the latest commit can be compared with its immediate predecessor.
+- After the commit diff, inspect the current relevant files and, when asked to review the project state broadly, read all tracked text/source files rather than relying only on the latest diff.
+- Treat the current working tree as authoritative. Do not infer current CSS/layout values from older commits when the working tree has changed.
+
