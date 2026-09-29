@@ -74,8 +74,7 @@ nav a{
     padding: 0 1rem;
 }
 svg{
-    vertical-align:middle;
-    margin-right: 15px;
+    vertical-align: middle;
 }
 
 /*------------------------------------------------------------------------------------------------*/
@@ -116,7 +115,7 @@ section.Hero {
 .Icons{
     margin-top: 3.5rem;
     width: 100%;
-    max-width: 867px;
+    max-width: 900px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -126,8 +125,12 @@ section.Hero {
     text-decoration: none;
     color: var(--color-text);
 }
-.Icons #more{
-    color: var(--color-accent-muted);
+.Icons a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+.Icons a svg{
+    margin-right: 15px;
 }
 .icon{
     display: flex;
@@ -135,32 +138,33 @@ section.Hero {
     gap: 2rem;
 }
 /*------------------------------------------------------------------------------------------------*/
-.Projects{
+.Projects-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     margin-top: 10rem;
     max-height: 600px;
-    width: 819px;
+    width: 900px;
 }
 .ProjectsHeader{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.Projects h2{
+.Projects-container h2{
     font-size: 2rem;
     color: var(--color-text);
 }
-.Projects a{
+.Projects-container a{
     font-size: 1.2rem;
     text-decoration: dotted;
     color: var(--color-text);
+    align-self: center;
 }
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
 .project-card{
@@ -172,15 +176,55 @@ section.Hero {
 .project-card img{
     width: 100%; /*fill card width*/
     border-radius: 0.5rem;
-    margin-bottom: 1rem;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-.project-card a{
-    color: var(--color-accent);
-    font-size: 1.1rem;
-    text-decoration: none;
+.project-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+.project-card h2{
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-top: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+}
+.project-card p{
+    text-wrap: pretty;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+}
+.project-card a{
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    color: var(--color-accent-muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.project-card a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
 }
 /*------------------------------------------------------------------------------------------------*/
+.Footer{
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--color-bg);
+    padding: 1rem 2rem;
+    margin: 5rem 0rem 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+.Footer h4{
+    font-weight: normal;
+}
+.Footer icon{
+    display: flex;
+}
