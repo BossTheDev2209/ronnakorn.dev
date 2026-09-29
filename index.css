@@ -80,6 +80,8 @@ svg{
 /*------------------------------------------------------------------------------------------------*/
 
 section.Hero {
+    width: 100%;
+    max-width: 900px;
     padding: 5rem 0rem 0rem 0rem;
     display: flex;
     flex-direction: column;
@@ -145,12 +147,17 @@ section.Hero {
     gap: 2rem;
     margin-top: 10rem;
     max-height: 600px;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
 }
 .ProjectsHeader{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.ProjectsHeader a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
 }
 .Projects-container h2{
     font-size: 2rem;
@@ -201,7 +208,7 @@ section.Hero {
 .project-card a{
     align-self: flex-start;
     margin-top: 0.5rem;
-    color: var(--color-accent-muted);
+    color: var(--color-accent);
     font-size: 0.9rem;
     font-weight: 700;
     text-decoration: none;
@@ -225,6 +232,7 @@ section.Hero {
 .Footer h4{
     font-weight: normal;
 }
-.Footer icon{
+.Footer .icon{
+    gap: 2rem;
     display: flex;
 }
