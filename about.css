@@ -121,21 +121,20 @@ section.About {
 }
 /*------------------------------------------------------------------------------------------------*/
 .Footer{
-    max-width: 1000px;
+    max-width: 900px;
     width: 100%;
     background-color: var(--color-bg);
-    padding: 1rem 2rem;
-    margin: 0 0 0.5rem 0;
-    margin-top: auto; /*pin footer to page bottom*/
+    padding: 0.5rem 2rem;
+    margin: 5rem 0rem 0.5rem 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 1rem;
 }
-.Footer h4{
-    font-weight: normal;
+.Footer p{
+    font-size: small;
 }
 .Footer .icon{
     gap: 2rem;
     display: flex;
-}
+}   
